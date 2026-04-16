@@ -450,6 +450,10 @@ export default function Index() {
                     <Text style={styles.speedDoneButtonText}>Done</Text>
                   </Pressable>
                 </View>
+                <Text style={styles.speedHint}>
+                  Typical ranges: Beginner 1.5-2.5 mph, Intermediate 2.5-4.0 mph, Advanced
+                  4.0+ mph
+                </Text>
               </View>
 
               <View style={styles.controlCard}>
@@ -732,6 +736,12 @@ const styles = StyleSheet.create({
     color: '#155EEF',
     fontSize: 12,
     fontWeight: '700',
+  },
+  speedHint: {
+    marginTop: 8,
+    fontSize: 12,
+    lineHeight: 16,
+    color: '#7A7A7A',
   },
   controlCard: {
     backgroundColor: '#FFFFFF',
